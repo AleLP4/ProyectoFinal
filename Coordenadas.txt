@@ -1,0 +1,78 @@
+new Coordenadas(294, ) // 1
+new Coordenadas(294, ) // 2
+new Coordenadas(294, ) // 3
+new Coordenadas(294 , ) // 4
+new Coordenadas(294,368) // 5 
+new Coordenadas(294 , ) // 6
+new Coordenadas(294 , ) // 7 
+new Coordenadas(294 , ) // 8
+new Coordenadas( ,284 ) // 9
+new Coordenadas( ,284 ) // 10
+
+
+new Coordenadas( ,284) // 11
+new Coordenadas(377,284) // 12
+new Coordenadas( ,284) // 13
+new Coordenadas( ,284) // 14
+new Coordenadas( ,284) // 15
+new Coordenadas(471,284) // 16
+new Coordenadas(471,231) // 17
+new Coordenadas(471,175) // 18
+new Coordenadas( ,175) // 19 
+new Coordenadas( ,175) // 20
+
+
+new Coordenadas( ,175) // 21
+new Coordenadas( ,175) // 22
+new Coordenadas( ,175) // 23
+new Coordenadas( ,175) // 24
+new Coordenadas( ,175) // 25
+new Coordenadas(294 , ) // 26
+new Coordenadas(294 , ) // 27
+new Coordenadas(294 , ) // 28
+new Coordenadas(294 , ) // 29
+new Coordenadas(294 , ) // 30
+ 
+
+new Coordenadas(294 , ) // 31 
+new Coordenadas(294 , ) // 32
+new Coordenadas(294 ,0) // 33
+new Coordenadas(237,0) // 34
+new Coordenadas(185,0) // 35
+new Coordenadas(185, ) // 36
+new Coordenadas(185, ) // 37
+new Coordenadas(185, ) // 38
+new Coordenadas(185,92) // 39
+new Coordenadas(185, ) // 40
+
+new Coordenadas(185, ) // 41
+new Coordenadas(185, ) // 42
+new Coordenadas( , ) // 43
+new Coordenadas( , ) // 44
+new Coordenadas( , ) // 45
+new Coordenadas( , ) // 46
+new Coordenadas( , ) // 47
+new Coordenadas( , ) // 48
+new Coordenadas( , ) // 49
+new Coordenadas( , ) //50
+
+new Coordenadas( , ) // 51
+new Coordenadas( ,284) // 52
+new Coordenadas( ,284) // 53
+new Coordenadas( ,284) // 54
+new Coordenadas( ,284) // 55
+new Coordenadas( ,284) // 56
+new Coordenadas( ,284) // 57
+new Coordenadas( ,284) // 58
+new Coordenadas( ,284) // 59
+new Coordenadas( , ) // 60
+
+
+new Coordenadas( , ) // 61
+new Coordenadas( , ) // 62
+new Coordenadas( , ) // 63
+new Coordenadas( , ) // 64
+new Coordenadas( , ) // 65
+new Coordenadas( , ) // 66
+new Coordenadas( , ) // 67
+new Coordenadas( , ) // 68

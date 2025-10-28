@@ -94,8 +94,13 @@ public class GUIinicio extends javax.swing.JFrame {
 
         jComboBox1.setBackground(new java.awt.Color(27, 6, 169));
         jComboBox1.setForeground(new java.awt.Color(255, 255, 255));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Azul", "Rojo", "Verde", "Amarillo" }));
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Rojo", "Amarillo", "Azul", "Verde" }));
         jComboBox1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 400, 130, 30));
 
         imgFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imgInicio_1.png"))); // NOI18N
@@ -144,6 +149,10 @@ public class GUIinicio extends javax.swing.JFrame {
         demo.setVisible(true);
         demo.setLocationRelativeTo(null);
     }//GEN-LAST:event_btnJugarActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
 
    
 

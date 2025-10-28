@@ -17,8 +17,19 @@ public class GUIJuego extends javax.swing.JFrame {
      */
     public GUIJuego() {
         initComponents();
+       panelControl1.setPanelTablero(panelTablero1);
     }
 
+    public PanelControl getPanelControl1() {
+        return panelControl1;
+    }
+
+    public PanelTablero getPanelTablero1() {
+        return panelTablero1;
+    }
+    
+    
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -28,28 +39,13 @@ public class GUIJuego extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
+        panelTablero1 = new view.PanelTablero();
+        panelControl1 = new view.PanelControl();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        jLabel1.setText("JUEGO");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(176, 176, 176)
-                .addComponent(jLabel1)
-                .addContainerGap(189, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(146, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(138, 138, 138))
-        );
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        getContentPane().add(panelTablero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(panelControl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, -1, 180));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -57,6 +53,7 @@ public class GUIJuego extends javax.swing.JFrame {
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
+    private view.PanelControl panelControl1;
+    private view.PanelTablero panelTablero1;
     // End of variables declaration//GEN-END:variables
 }

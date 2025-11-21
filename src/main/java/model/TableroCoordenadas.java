@@ -102,35 +102,61 @@ public class TableroCoordenadas
     
     private Coordenadas caminoWin [][] = new Coordenadas [][]{
         {
-            //estos son ejemplos faltan las cordenadas
-            new Coordenadas(186,440), // 66
-            new Coordenadas(186,463), // 67
-            new Coordenadas(239,463) // 68
+            //rojo
+            new Coordenadas(239,23),
+            new Coordenadas(239,46),
+            new Coordenadas(239,69),
+            new Coordenadas(239,92),
+            new Coordenadas(239,116),
+            new Coordenadas(239,139),
+            new Coordenadas(239,163),
+
         },
         {
-            new Coordenadas(186,440), // 66
-            new Coordenadas(186,463), // 67
-            new Coordenadas(239,463) // 68
+            //amarillo
+            new Coordenadas(239,440),
+            new Coordenadas(239,416),
+            new Coordenadas(239,394),
+            new Coordenadas(239,369),
+            new Coordenadas(239,346),
+            new Coordenadas(239,323),
+            new Coordenadas(239,300),
+           
         },
         {
-            new Coordenadas(186,440), // 66
-            new Coordenadas(186,463), // 67
-            new Coordenadas(239,463) // 68
+            //azul
+            new Coordenadas(448,229), // 1 
+            new Coordenadas(424,229), // 2
+            new Coordenadas(401,229), // 3
+            new Coordenadas(377,229), // 4
+            new Coordenadas(353,229), // 5
+            new Coordenadas(331,229), // 6
+            new Coordenadas(307,229), // 7
+            
+
         },
         {
-            new Coordenadas(186,440), // 66
-            new Coordenadas(186,463), // 67
-            new Coordenadas(239,463) // 68
+            //verde
+            new Coordenadas(31,229), // 1
+            new Coordenadas(55,229), // 2
+            new Coordenadas(78,229), // 3
+            new Coordenadas(101,229), // 4
+            new Coordenadas(125,229), // 5
+            new Coordenadas(148,229), // 6
+            new Coordenadas(172,229), // 7
+
+
         } };//fin caminoWin
     
     
     public Coordenadas [] metas = new Coordenadas []
     {
-        //esto es un ejemplo falta ponerlas
-            new Coordenadas(186,440), // 66
-            new Coordenadas(186,463), // 67
-            new Coordenadas(239,463) // 68
-            //son 4
+ 
+            new Coordenadas(239,199), //meta rojo
+            new Coordenadas(239,260), //meta amarillo
+            new Coordenadas(263,229), //meta azul
+            new Coordenadas(220,229) //meta verde
+
     };//fin metas
     
     public int getCasillasTotal ()

@@ -4,6 +4,8 @@
  */
 package view;
 
+import controller.ControladorJuego;
+
 /**
  *
  * @author TI-IN
@@ -15,7 +17,7 @@ public class GUIJuego extends javax.swing.JFrame {
     /**
      * Creates new form GUIJuego
      */
-    public GUIJuego() {
+    public GUIJuego(ControladorJuego ctrl) {
         initComponents();
        panelControl1.setPanelTablero(panelTablero1);
     }
@@ -44,8 +46,8 @@ public class GUIJuego extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(panelTablero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-        getContentPane().add(panelControl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, -1, 180));
+        getContentPane().add(panelTablero1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 500, 520));
+        getContentPane().add(panelControl1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 490, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

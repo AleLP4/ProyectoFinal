@@ -1,6 +1,7 @@
 package model;
 
 import java.util.Random;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -12,16 +13,16 @@ public class Dado
     private Random random;
     private int numero;
 
-    public Dado(Random random, int numero) 
+    public Dado() 
     {
-        this.random = random;
-        this.numero = numero;
+        random = new Random();
     }//fin constructor
     
     
     public int tirada ()
     {
-        numero= random.nextInt(6)+1;       
+        numero= random.nextInt(6)+1;   
+        JOptionPane.showMessageDialog(null,"Saco " + numero);
         return numero;
     }//fin tirada
     

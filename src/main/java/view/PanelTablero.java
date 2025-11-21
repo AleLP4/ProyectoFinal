@@ -21,7 +21,7 @@ public class PanelTablero extends javax.swing.JPanel {
      */
     public PanelTablero() {
         initComponents();
-        this.addMouseListener(new MouseAdapter ()
+        /*this.addMouseListener(new MouseAdapter ()
                 {
                     @Override
                     public void mousePressed (MouseEvent e)
@@ -29,7 +29,7 @@ public class PanelTablero extends javax.swing.JPanel {
                     Point p = e.getPoint();
                     clickFicha(p);
                     }//fin metodo
-                });
+                });*/
     }
 
     private TableroCoordenadas tablero;
@@ -48,11 +48,11 @@ public class PanelTablero extends javax.swing.JPanel {
         
     }//fin setTableroCoordenadas
     
-    public void clickFicha (Point p)
+    /* public void clickFicha (Point p)
     {
        imgFichaRoja.setLocation(p);
        System.out.println("Coordenadas :" + p.x + " , "+ p.y +".");
-    }
+    }*/
     
     public void moverFicha (int colorId, int x , int y)
     {
@@ -67,20 +67,23 @@ public class PanelTablero extends javax.swing.JPanel {
     
     public JLabel labelJugador (int colorId)
     {
+        
         if(colorId==0)
         {
             return imgFichaRoja;
         }
         if (colorId==1)
         {
-            return imgFichaRoja;
+            return imgFichaAmarilla;
         }//fin if2
         if(colorId==2)
         {
-            return imgFichaRoja;
+            return imgFichaAzul;
         }//fin if3
+        return imgFichaVerde;
+        
 
-        return imgFichaRoja;
+     
 
     }//fin
     
@@ -101,21 +104,41 @@ public class PanelTablero extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        imgFichaVerde = new javax.swing.JLabel();
+        imgFichaAzul = new javax.swing.JLabel();
+        imgFichaAmarilla = new javax.swing.JLabel();
         imgFichaRoja = new javax.swing.JLabel();
         imgTablero = new javax.swing.JLabel();
 
-        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setLayout(null);
+
+        imgFichaVerde.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FichaVerde.png"))); // NOI18N
+        add(imgFichaVerde);
+        imgFichaVerde.setBounds(70, 390, 21, 31);
+
+        imgFichaAzul.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FichaAzul.png"))); // NOI18N
+        add(imgFichaAzul);
+        imgFichaAzul.setBounds(400, 60, 21, 31);
+
+        imgFichaAmarilla.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FichaAmarilla.png"))); // NOI18N
+        add(imgFichaAmarilla);
+        imgFichaAmarilla.setBounds(400, 390, 21, 32);
 
         imgFichaRoja.setIcon(new javax.swing.ImageIcon(getClass().getResource("/FichaRoja.png"))); // NOI18N
-        add(imgFichaRoja, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 70, 20, 30));
+        add(imgFichaRoja);
+        imgFichaRoja.setBounds(80, 70, 20, 30);
 
         imgTablero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tablerografico.png"))); // NOI18N
-        add(imgTablero, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(imgTablero);
+        imgTablero.setBounds(0, 0, 500, 500);
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel imgFichaAmarilla;
+    private javax.swing.JLabel imgFichaAzul;
     private javax.swing.JLabel imgFichaRoja;
+    private javax.swing.JLabel imgFichaVerde;
     private javax.swing.JLabel imgTablero;
     // End of variables declaration//GEN-END:variables
 }

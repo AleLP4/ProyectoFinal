@@ -21,11 +21,11 @@ public class PanelControl extends javax.swing.JPanel {
 
     // --- SETTERS prácticos para mostrar info ---
     public void setNumeroDado(int valor) {
-        lblNumeroDeDado.setText("Numero dado: " + valor);
+        txtNumeroDeDado.setText("Numero dado: " + valor);
     }
 
-    public void setTextoTurno(String texto) {
-        lblTurnoDeFicha.setText("Ficha turno: " + texto);
+    public void setFichaTurno(String texto) {
+        txtTurnoDeFicha.setText("Ficha turno: " + texto);
     }
     
     public void setPanelTablero(PanelTablero tableroVisible)
@@ -46,12 +46,54 @@ public class PanelControl extends javax.swing.JPanel {
     }
 
     public JLabel getLblNumeroDeDado() {
-        return lblNumeroDeDado;
+        return txtNumeroDeDado;
     }
 
     public JLabel getLblTurnoDeFicha() {
-        return lblTurnoDeFicha;
+        return txtTurnoDeFicha;
     }
+
+    public JLabel getTxtTiempo() {
+        return txtTiempo;
+    }
+
+    public void setTxtTiempo(int valor) {
+        txtTiempo.setText( "Tiempo: " + valor );
+    }
+
+    public JLabel getTxtPuntosJugador() {
+        return txtPuntosJugador;
+    }
+
+    public void setTxtPuntosJugador(int valor) {
+        txtPuntosJugador.setText("Puntos jugador: " + valor);
+    }//
+
+    public JLabel getTxtPuntosOponente() {
+        return txtPuntosOponente;
+    }
+
+    public void setTxtPuntosOponente(int valor) {
+        txtPuntosOponente.setText("Puntos Oponente: " + valor);
+    }//
+
+    public JLabel getTxtNumeroDeDado() {
+        return txtNumeroDeDado;
+    }
+
+    public void setTxtNumeroDeDado(int valor) {
+        txtNumeroDeDado.setText("Numero de dado:" + "\n " + valor);
+    }//
+
+    public JLabel getTxtTurnoDeFicha() {
+        return txtTurnoDeFicha;
+    }
+
+    public void setTxtTurnoDeFicha(String valor) {
+        txtTurnoDeFicha.setText("Turno de :" + "\n " + valor);
+    }//
+    
+    
     
     
     
@@ -67,8 +109,11 @@ public class PanelControl extends javax.swing.JPanel {
         btnDado = new javax.swing.JButton();
         btnReinicio = new javax.swing.JButton();
         btnMenu = new javax.swing.JButton();
-        lblNumeroDeDado = new javax.swing.JLabel();
-        lblTurnoDeFicha = new javax.swing.JLabel();
+        txtNumeroDeDado = new javax.swing.JLabel();
+        txtTurnoDeFicha = new javax.swing.JLabel();
+        txtTiempo = new javax.swing.JLabel();
+        txtPuntosJugador = new javax.swing.JLabel();
+        txtPuntosOponente = new javax.swing.JLabel();
 
         btnDado.setText("Dado");
         btnDado.addActionListener(new java.awt.event.ActionListener() {
@@ -80,10 +125,21 @@ public class PanelControl extends javax.swing.JPanel {
         btnReinicio.setText("Reinicio");
 
         btnMenu.setText("Menu");
+        btnMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMenuActionPerformed(evt);
+            }
+        });
 
-        lblNumeroDeDado.setText("Numero de dado");
+        txtNumeroDeDado.setText("Numero de dado");
 
-        lblTurnoDeFicha.setText("Turno de ficha");
+        txtTurnoDeFicha.setText("Turno de ficha");
+
+        txtTiempo.setText("Tiempo: ");
+
+        txtPuntosJugador.setText("Puntos Jugador:");
+
+        txtPuntosOponente.setText("Puntos Oponente:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -92,41 +148,54 @@ public class PanelControl extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(65, 65, 65)
+                        .addComponent(btnDado))
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(15, 15, 15)
                         .addComponent(btnMenu)
                         .addGap(28, 28, 28)
                         .addComponent(btnReinicio))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(btnDado))
+                        .addGap(33, 33, 33)
+                        .addComponent(txtPuntosOponente, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(56, 56, 56)
-                        .addComponent(lblNumeroDeDado))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNumeroDeDado)
+                            .addComponent(txtTurnoDeFicha)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addComponent(lblTurnoDeFicha)))
+                        .addGap(33, 33, 33)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtTiempo)
+                            .addComponent(txtPuntosJugador, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(lblTurnoDeFicha)
-                .addGap(42, 42, 42)
-                .addComponent(lblNumeroDeDado)
-                .addGap(1, 1, 1)
+                .addGap(30, 30, 30)
+                .addComponent(txtTurnoDeFicha)
+                .addGap(18, 18, 18)
+                .addComponent(txtNumeroDeDado)
+                .addGap(35, 35, 35)
                 .addComponent(btnDado)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnMenu)
                     .addComponent(btnReinicio))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(txtTiempo)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtPuntosJugador)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtPuntosOponente)
+                .addContainerGap(24, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnDadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDadoActionPerformed
         // TODO add your handling code here:
-        Coordenadas [] recorrido = tc.getRecorrido();
+        /*Coordenadas [] recorrido = tc.getRecorrido();
         for(int i= 0; i<recorrido.length; i++)
         {
            int x = recorrido[i].getX();
@@ -142,15 +211,29 @@ public class PanelControl extends javax.swing.JPanel {
                
                
            }
-        }//fin for
+        }//fin for*/
+        
+        
+        
+        
     }//GEN-LAST:event_btnDadoActionPerformed
 
+    private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
+        // TODO add your handling code here:
 
+     
+    }//GEN-LAST:event_btnMenuActionPerformed
+
+
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDado;
     private javax.swing.JButton btnMenu;
     private javax.swing.JButton btnReinicio;
-    private javax.swing.JLabel lblNumeroDeDado;
-    private javax.swing.JLabel lblTurnoDeFicha;
+    private javax.swing.JLabel txtNumeroDeDado;
+    private javax.swing.JLabel txtPuntosJugador;
+    private javax.swing.JLabel txtPuntosOponente;
+    private javax.swing.JLabel txtTiempo;
+    private javax.swing.JLabel txtTurnoDeFicha;
     // End of variables declaration//GEN-END:variables
 }
